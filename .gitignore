@@ -1,0 +1,30 @@
+# Java compilado
+*.class
+
+# Maven
+target/
+
+# Gradle
+.gradle/
+build/
+
+# Eclipse
+.metadata/
+.settings/
+
+# IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Arquivos temporários / logs
+*.log
+*.tmp
+*.swp
+*~
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
