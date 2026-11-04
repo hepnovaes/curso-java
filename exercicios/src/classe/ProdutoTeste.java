@@ -10,7 +10,7 @@ public class ProdutoTeste {
 		Scanner entrada = new Scanner(System.in);*/
 		
 		Produto p1 = new Produto();
-		p1.nome = "Ipad";
+		p1.nome = "RX 9070 XT";
 		p1.preco = 4999.99;
 		p1.desconto = 0.2;
 		
@@ -22,8 +22,8 @@ public class ProdutoTeste {
 		System.out.println(p2.nome);
 		System.out.println(p1.nome);
 		
-		double precoFinal1 = p1.preco * (1 - p1.desconto);
-		double precoFinal2 = p2.preco * (1 - p2.desconto);
+		double precoFinal1 = p1.precoComDesconto(0.2);
+		double precoFinal2 = p2.precoComDesconto();
 		double mediaCarrinho = (precoFinal1 + precoFinal2) / 2;
 		
 		System.out.printf("Média do carrinho = R$%.2f.", mediaCarrinho);
